@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Nunito+Sans&display=swap">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu&display=swap" rel="stylesheet">
 
     <title>My page</title>
 </head>
@@ -76,13 +76,88 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="single-post">
+                    <h3 class="post-category">Some Category</h3>
+                    <h2 class="post-title"><a href="#">Some Title</a></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus diam, sagittis vitae imperdiet sit amet, porttitor id lorem. Donec quis porttitor sem. Nam id aliquam felis, ac aliquet turpis. Fusce fringilla blandit nisl nec feugiat. Praesent convallis
+                        lacinia justo non condimentum. Phasellus euismod, dui sit amet hendrerit gravida, erat dolor auctor mauris, non egestas tellus purus ac ipsum. Suspendisse potenti. Nam mauris risus, ultrices sed ultrices ac, tristique nec libero.
+                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse nec tortor quis tortor accumsan sodales ac a nisi. Fusce eu laoreet ante, at bibendum nunc. In vulputate ultricies sem, vitae malesuada
+                        sapien iaculis id. In sit amet sapien sed massa dictum convallis non ut quam. Etiam velit enim, condimentum eget diam in, molestie scelerisque turpis. Donec sit amet dolor ut enim dignissim pulvinar vel ac sem. Nulla scelerisque
+                        tempor mi.
+                    </p>
+                    <p>
+                        <a href="#" class="link-more">Link more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="grid-posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="img/post1.jpg" class="card-img-top" alt="first_post">
+                        <div class="card-body">
+                            <h3 class="post-category">Post1 Category</h3>
+                            <h5 class="post-title">Card1 title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus diam, sagittis vitae imperdiet sit amet, porttitor id lorem. Donec quis porttitor sem. Nam id aliquam felis, ac aliquet turpis. Fusce fringilla blandit nisl
+                                nec feugiat.Praesent convallis lacinia justo non condimentum. Phasellus euismod, dui sit amet hendrerit gravida, erat dolor auctor mauris, non egestas tellus purus ac ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="img/post2.jpg" class="card-img-top" alt="second_post">
+                        <div class="card-body">
+                            <h3 class="post-category">Post2 Category</h3>
+                            <h5 class="post-title">Card2 title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec risus diam, sagittis vitae imperdiet sit amet, porttitor id lorem. Donec quis porttitor sem. Nam id aliquam felis, ac aliquet turpis. Fusce fringilla blandit nisl
+                                nec feugiat.Praesent convallis lacinia justo non condimentum. Phasellus euismod, dui sit amet hendrerit gravida, erat dolor auctor mauris, non egestas tellus purus ac ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center after-posts">
+                    <button type="button" class="btn btn-outline-secondary load-more">Load more
+                        <span class="spinner-border text-dark" role="status" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <section class="signup">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-center">Sign up for our newsletter!</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script id="__bs_script__">
+        //<![CDATA[
+        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
+        //]]>
+    </script>
 </body>
 
 </html>
