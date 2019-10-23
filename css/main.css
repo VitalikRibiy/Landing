@@ -44,10 +44,6 @@ header .nav-item a::after {
     transition: all 2s;
 }
 
-header .nav-item .nav-link:hover {
-    cursor: hand;
-}
-
 header .nav-item a:hover::after {
     transform: scale(1);
 }
