@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/fc20ae5703.js" crossorigin="anonymous"></script>
     <title>My page</title>
 </head>
 
@@ -16,7 +16,7 @@
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="index.html">Navbar</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                           <span class="navbar-toggler-icon"></span>
                                         </button>
@@ -24,22 +24,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a id="GoAbout" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a id="GoPosts" class="nav-link">Posts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Work</a>
+                            <a id="GoSubscribe" class="nav-link">Subscribe</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a id="GoFindUs" class="nav-link">Find us</a>
                         </li>
                     </ul>
                 </div>
@@ -79,7 +73,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="single-post">
+                <div id="single-post" class="single-post">
                     <h3 class="post-category">Some Category</h3>
                     <h2 class="post-title"><a href="#">Some Title</a></h2>
                     <p>
@@ -97,7 +91,7 @@
         </div>
     </div>
 
-    <div class="grid-posts">
+    <div id="Posts" class="grid-posts">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -131,33 +125,45 @@
         </div>
     </div>
 
-    <section class="signup">
+    <section id="Subscribe" class="signup">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h3 class="text-center">Sign up for our newsletter!</h3>
                     <form>
                         <div class="form-row">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Email">
+                            <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 form-input">
+                                <input type="email" class="form-control" placeholder="Enter your valid email address" required="">
+                                <button class="btn" type="submit"><i class="far fa-paper-plane"></i></button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-
     </section>
+
+    <footer>
+        <div id="FindUs" class="container">
+            <div class="d-sm-flex justify-content-between">
+                <div class="footer-left">
+                    <a href="">Terms and conditions</a>
+                    <a href="">Privacy</a>
+                </div>
+                <div class="footer-right">
+                    <span>Follow</span>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-    <script id="__bs_script__">
-        //<![CDATA[
-        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
-        //]]>
-    </script>
 </body>
 
 </html>

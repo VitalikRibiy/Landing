@@ -24,3 +24,27 @@ $(function() {
         });
     });
 });
+
+$("#GoAbout").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#single-post").offset().top
+    }, 50);
+});
+
+$("#GoPosts").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#Posts").offset().top
+    }, 100);
+});
+
+$("#GoSubscribe").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#Subscribe").offset().top
+    }, 150);
+});
+
+$("#GoFindUs").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#FindUs").offset().top
+    }, 200);
+});
